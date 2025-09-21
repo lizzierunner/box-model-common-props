@@ -1,9 +1,5 @@
-/* 
-    This is a CSS comment. Please add your name to this file below:
-    
-    NAME: 
-*/
-/* -------------------------------------------------- */
+/* Author: Elizabeth Johnson */
+
 /* 
     The code below is called the CSS reset. We will learn more 
     about this in a future module, for now you can ignore this 
@@ -334,6 +330,17 @@ footer{
         - add the large box shadow
 */
 /* ADD SELECTOR AND STYLES HERE */
+#section2 a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--box-shadow-lg);
+}
 
 /* For the first link in this section: */
 #section2 a:first-of-type{
@@ -376,8 +383,11 @@ footer{
             - bottom: 16px
             - left: 60px
 */
-#section2 div > p:last-of-type{
-    
+#section2 div > p:last-of-type {
+    background-color: var(--teal-rgba);
+    border: 4px dashed var(--dk-gray);
+    margin: 16px 60px 32px 8px;
+    padding: 32px 8px 16px 60px;
 }
 
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
@@ -394,7 +404,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
-
+    background-color: var(--dk-blue);
+    color: var(--white);
+    border-color: var(--lt-blue);
+    box-shadow: var(--box-shadow-sm);
 }
 
 #section2 a:last-of-type:hover{
@@ -417,8 +430,12 @@ footer{
         - add margin to center this element
         - add the small filter drop shadow from the CSS variables in the root
 */
-#section3 img{
-    
+#section3 img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    filter: var(--filter-shadow-sm);
 }
 
 #section3 div::before{
@@ -459,7 +476,17 @@ footer{
         - move this up from its original location by 50px
         - move this to the right from its original location by 25px
 */
-#section3 div::after{
+#section3 div::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    left: 25px;
 }
 
 
@@ -480,8 +507,8 @@ footer{
             - bottom: 1rem
             - left: 0
 */
-#section4 p:last-of-type{
-
+#section4 p:last-of-type {
+    margin: 1rem 0 1rem 0;
 }
 
 /* ------------- SECTION 5 STYLES ---------------- */
